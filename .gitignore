@@ -1,0 +1,38 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Connectome Data & Generated Artefacts (CRITICAL)
+data/raw/*
+data/processed/*
+data/circuits/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/circuits/.gitkeep
+
+# Large Simulation Outputs & Database Logs
+*.sqlite
+*.sqlite3
+*.db
+*.wal
+experiments/runs/*
+*.npy
+*.npz
+
+# C++ Build Artifacts (for Phase 5 kernels)
+*.so
+*.dylib
+*.dll
+*.o
+
+# Visualizer (Node / Vite)
+visualizer/node_modules/
+visualizer/dist/
+visualizer/.env.local
+.DS_Store
