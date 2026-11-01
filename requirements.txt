@@ -1,0 +1,7 @@
+numpy
+scipy
+pandas
+pyarrow
+torch
+brian2
+pytest
