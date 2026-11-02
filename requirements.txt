@@ -2,6 +2,7 @@ numpy
 scipy
 pandas
 pyarrow
+joblib
 torch
 brian2
 pytest
