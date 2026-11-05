@@ -37,6 +37,7 @@ A fruit fly's brain has been fully mapped as a **directed weighted graph**: 139,
 - `requirements.txt`: top-level deps (numpy, scipy, pandas, pyarrow, joblib, torch, brian2, pytest).
 - `requirements.lock`: all 43 packages pinned (torch 2.15.0+cu132, brian2 2.10.1, numpy 2.5.4, scipy 1.18.1).
 - torch sees the GPU. The CUDA runtime ships inside the torch wheel, so only the NVIDIA driver (615.78) is needed on the system.
+- **macOS:** a second environment exists for Apple Silicon (Python 3.13, MPS, its own lockfile). See [`macos-setup.md`](macos-setup.md).
 
 ```bash
 uv venv --python 3.12 .venv
